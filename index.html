@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CANIFA</title>
+	<link rel="stylesheet" type="text/css" href="./Bai1/css/style.css">
+</head>
+<body > 
+	<form>
+        <input type="text" name="search" placeholder="Search..">
+	</form>
+	<div class="container" align ='center'>
+		<h1 >DANH MỤC SẢN PHẨM</h1>
+	
+		<ul class ="tab" >
+			<li class="tab-item active" onclick="changeProductList('trend',this)">Phổ biến</li>
+			<li class="tab-item" onclick="changeProductList('new',this)">Mới nhất</li>
+			<li class="tab-item" onclick="changeProductList('bestsell',this)">Ưa thích</li>
+		</ul>
+
+		<div id="trend" class ="aniamation">
+			<ul class ="product-list">
+				<li><img src="./Bai1/5.jpg"></li>
+				<li><img src="./Bai1/4.jpg"></li>
+				<li><img src="./Bai1/3.jpg"></li>
+				
+			</ul>
+		</div>
+
+		<div id="new" class ="aniamation">
+			<ul class ="product-list">
+				<li><img src="./Bai1/1.jpg"></li>
+				<li><img src="./Bai1/6.jpg"></li>
+				<li><img src="./Bai1/3.jpg"></li>
+			</ul>
+		</div>
+
+		<div id="bestsell" class ="aniamation">
+			<ul class ="product-list">
+				
+				<li><img src="./Bai1/4.jpg"></li>
+				
+				<li><img src="./Bai1/6.jpg"></li>
+				<li><img src="./Bai1/3.jpg"></li>
+			</ul>
+		</div>
+	</div>	
+	<p>Click button to see what happen</p>
+
+	<script src="./Bai1/product.js"></script>
+</body>
+</html>
